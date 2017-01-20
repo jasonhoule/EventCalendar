@@ -1,0 +1,73 @@
+.cal.calendar {
+  font-family: helvetica, arial, sans-serif;
+}
+
+.cal.calendar > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cal.calendar > table > thead .cal-nav a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #4096ee;
+}
+
+.cal.calendar > table > thead > tr > td {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cal.calendar > table > thead > tr.month > th, .cal.calendar > table > tbody> tr > td {
+  border: 1px solid #f2f2f2;
+}
+
+.cal.calendar > table > thead > tr.days {
+  background: #7abcff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+  color: #3f4c6b;
+}
+
+.cal.calendar > table > thead > tr > td, .cal.calendar > table > tbody > tr > td {
+  padding: 10px;
+}
+
+.cal.calendar > table > tbody > tr > td.day {
+  padding: 10px 0 20px 10px;
+  background-color: #fcfcfc;
+  color: #3f4c6b;
+  width: calc(100% / 7);
+}
+
+.cal.calendar > table > tbody > tr > td.day.today {
+  border: 2px solid #7abcff;
+}
+
+.cal.calendar > table > tbody > tr > td.day a {
+  text-decoration: none;
+  color: #413aa5;
+  font-weight: bold;
+}
+
+.cal.calendar > table > tbody > tr {
+  background-color: #f2f2f2;
+}
+
+.cal.calendar > table > tbody > tr > td.day.activity {
+  background-color: #7abcff;
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+}
+
+.cal.calendar > table > tbody > tr > td.day.activity > .cal-date {
+  margin-right: 10px;
+}
+
+.cal.calendar > table > tbody > tr > td.day.activity > .cal-events {
+
+}

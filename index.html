@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calendar Widget</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+	<script src="js/calendar.js"></script>
+
+	<link href="/css/calendar.css" rel="stylesheet" media="screen">
+	<link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+	<div id="calendar"></div>
+</body>
+
+<script>
+	$(document).ready(function() {
+	    // set the initial month and year to the current
+	    var month = moment().month();
+	    var year = moment().year();
+
+	    // Create a calendar instance with default of todays month and year
+	    var myCalendar = new Calendar({
+	    	container: '#calendar',
+	    	year: year,
+	    	month: month,
+	    	url: '/js/events.json'
+	    });
+	});
+</script>
+</html>
